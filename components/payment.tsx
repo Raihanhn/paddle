@@ -17,11 +17,11 @@ export default function Payment() {
     if (!paddle) return alert("Paddle not intialized");
 
     paddle.Checkout.open({
-      items: [{ priceId: "pro_01kj1yrgfxq56w7xm715bq2nyp", quantity: 1 }],
+      items: [{ priceId: "pri_01kj1ywq7y013ccyc0rq8wc831", quantity: 1 }],
       settings: {
         displayMode: "overlay",
         theme: "dark",
-        successUrl: "http:localhost:3000/success",
+        successUrl: "http://localhost:3000/success",
       },
     });
   };
